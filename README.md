@@ -14,20 +14,22 @@
 - url "/products/save" để lưu thông tin add hoặc edit product
 
 
-  +) Tạo các templates bằng file html để hiển thị giao diện:
+ +) Tạo các templates bằng file html để hiển thị giao diện:
   
-    home.html : để vào trang home giao diện 
-    listProduce.html : để hiện thị tất cả danh sách sản phẩm có trong DB 
-    addProduct.html : để thêm các sản phẩm vào DB
-    editProduct.html : để sửa các 1 sản phẩm được chọn.
-    confirm.html : để hiện thi trang xóa và xác nhận có xóa hay ko  
-  +) Trong application.properties 
-  
-    chỉ đinh url của database: url=jdbc:mysql://localhost/laptrinhweb
-    chỉ định username của db: username=root
-    chỉ định password của db: password=dtm0110
-  +) Trong pom.xml: 
-  
+   home.html : để vào trang home giao diện 
+   listProduce.html : để hiện thị tất cả danh sách sản phẩm có trong DB 
+   addProduct.html : để thêm các sản phẩm vào DB
+   editProduct.html : để sửa các 1 sản phẩm được chọn.
+   confirm.html : để hiện thi trang xóa và xác nhận có xóa hay ko  
+   
+ +) Trong application.properties 
+   chỉ đinh url của database: url=jdbc:mysql://localhost/laptrinhweb
+   
+   chỉ định username của db: username=root
+   
+   chỉ định password của db: password=dtm0110
+   
+ +) Trong pom.xml:
     thêm dependencies tương ứng.
 
 -- Luồng chạy --
