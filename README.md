@@ -19,7 +19,7 @@
   - Phan Trung Hưng
   - Đoàn Huy Tuấn
 
-### Đoàn Tuấn Mạnh - làm package web
+### Đoàn Tuấn Mạnh (B19DCCN414) - làm package web
 
   - HomeController
   - RenderProductController
@@ -28,14 +28,14 @@
     + Edit
     + Delete
     + Save
-### Phan Trung Hưng - làm template
+### Phan Trung Hưng (B19DCCN606) - làm template
 
   - addProduct
   - confirm
   - editProduct
   - home
   - listProduct
-### Đoàn Huy Tuấn - làm pakage data
+### Đoàn Huy Tuấn (B19DCCN330) - làm pakage data
 
   - IProductRepository
   - Product
