@@ -68,7 +68,6 @@ public class RenderProductController {
             return "addProduct";
         } else {
             iProductRepository.save(product);
-            //model.addFlashAttribute("success", "Thêm mới thành công!");
             return "redirect:/products";
         }
     }
