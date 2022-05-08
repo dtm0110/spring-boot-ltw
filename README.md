@@ -1,6 +1,6 @@
 # spring-boot-ltw
 
-
+### Mô tả
 -- Phần Data --
 - Tạo file IProductRepository extends từ CrudRepository để kết nối đến Database
 - Tạo file Product để lưu mỗi đối tượng product cần sử dụng
