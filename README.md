@@ -15,18 +15,22 @@
 
 
 ### Đoàn Tuấn Mạnh - làm package web
-  -- HomeController
-  -- RenderProductController
+
+  - HomeController
+  - RenderProductController
+  
     + Add
     + Edit
     + Delete
     + Save
 ### Phan Trung Hưng - làm template
-  -- addProduct
-  -- confirm
-  -- editProduct
-  -- home
-  -- listProduct
+
+  - addProduct
+  - confirm
+  - editProduct
+  - home
+  - listProduct
 ### Đoàn Huy Tuấn - làm pakage data
-  -- IProductRepository
-  -- Product
+
+  - IProductRepository
+  - Product
