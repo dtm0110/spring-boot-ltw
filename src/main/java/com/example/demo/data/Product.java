@@ -6,10 +6,14 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 
 import lombok.Data;
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 @Data
 @RequiredArgsConstructor
+@Getter
+@Setter
 @Entity
 public class Product {
 	@Id
@@ -17,7 +21,6 @@ public class Product {
 	private String code;
 	@NotBlank(message = "Description không để trống !!!")
 	private String description;
-	@NotBlank(message = "Price không để trống !!!")
-	@Min(value = 0, message = "Nhập Price lớn hơn 0 !!!")
+	@Min(value = 1, message = "Nhập Price lớn hơn 0 !!!")
 	private int price;
 }

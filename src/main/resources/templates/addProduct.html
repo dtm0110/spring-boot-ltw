@@ -26,7 +26,6 @@
         <label class="pad_top">Product Price: </label>
         <input type="text" th:field="*{price}" placeholder="Price"/>
         <span style=" color: red;" th:if=" ${#fields.hasErrors('price')}" th:errors="*{price}">Price</span>
-
     </div>
 
     <label>&nbsp;</label>

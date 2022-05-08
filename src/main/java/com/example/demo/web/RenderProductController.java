@@ -18,10 +18,11 @@ import java.util.Optional;
 @Slf4j
 @Controller
 @RequestMapping("/products")
-@RequiredArgsConstructor(onConstructor_ = {@Autowired})
+//@RequiredArgsConstructor(onConstructor_ = {@Autowired})
 public class RenderProductController {
 
-    private final IProductRepository iProductRepository;
+	@Autowired
+    private IProductRepository iProductRepository;
 
     @ModelAttribute
     public void addProductToModel(Model model) {
