@@ -4,6 +4,7 @@
 -- Phần Data --
 - Tạo file IProductRepository extends từ CrudRepository để kết nối đến Database
 - Tạo file Product để lưu mỗi đối tượng product cần sử dụng
+
 -- Phần Controller --
 - url "/" để vào hiển thị trang home
 - url "/products" để hiện thị danh sách sản phẩm và các lựa chọn
