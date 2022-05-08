@@ -51,7 +51,7 @@ public class RenderProductController {
     @GetMapping("/preDelete")
     public String preDeleteProduct(@RequestParam("code") String code, Model model) {
         Optional<Product> productX = iProductRepository.findById(code);
-        productX.ifPresent(product -> model.addAttribute("product", productX));
+        productX.ifPresent(product -> model.addAttribute("product", product));
         return "confirm";
     }
 
@@ -62,24 +62,13 @@ public class RenderProductController {
         return "redirect:/products";
     }
 
-    @PostMapping("saveUpdate")
-    public String saveUpdate(@Valid Product product, Errors errors, RedirectAttributes model) {
-        if (errors.hasErrors()) {
-            return "addProduct";
-        } else {
-            iProductRepository.save(product);
-            model.addFlashAttribute("success", "Cập nhật thành công!");
-            return "redirect:/products";
-        }
-    }
-
     @RequestMapping(value = "save", method = RequestMethod.POST)
-    public String save(@Valid Product product, Errors errors, RedirectAttributes model) {
+    public String save(@Valid Product product, Errors errors, Model model) {
         if (errors.hasErrors()) {
             return "addProduct";
         } else {
             iProductRepository.save(product);
-            model.addFlashAttribute("success", "Thêm mới thành công!");
+            //model.addFlashAttribute("success", "Thêm mới thành công!");
             return "redirect:/products";
         }
     }

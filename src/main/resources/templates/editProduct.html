@@ -8,7 +8,7 @@
 
 <body>
 <h1>Product</h1>
-<form action="#" th:object="${product}" th:action="@{saveUpdate}" method="post">
+<form action="#" th:object="${product}" th:action="@{save}" method="post">
     <div class="inp">
         <label class="pad_top">Product code:</label>
         <input type="text" th:field="*{code}" placeholder="Product code"/>
