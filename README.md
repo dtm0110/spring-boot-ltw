@@ -3,14 +3,14 @@
 
 
 ## COINMARKETCAP
-    ## [`/mia/get`]
-    Returns data for the MiaSwap pairs.
+## [`/mia/get`]
+Returns data for the MiaSwap pairs.
 
-    ### Request 
-    Get https://cmc-cg-api.miaswap.io/mia/get
+### Request 
+`Get https://cmc-cg-api.miaswap.io/mia/get`
 
-    ### Response 
-    ```json5
+### Response 
+```json5
     {
         "0x..._0x...": {
             "base_id": "0x...",
@@ -25,43 +25,54 @@
         },
         //...
     }
+```
+## [`/faming/get`]
+Returns data for the MiaSwap farms.
 
-    ## [`/faming/get`]
-    Returns data for the MiaSwap farms.
+### Request 
+`Get https://cmc-cg-api.miaswap.io/farming/get`
 
-    ### Request 
-    Get https://cmc-cg-api.miaswap.io/farming/get
-
-    ### Response 
-    ```json5
+### Response 
+```json5
     {
-    provider: 'MiaSwap',
-    provider_logo: 'URL',
-    provider_URL: 'URL',
-    links: [
-        {
-        title: '...',
-        link: 'URL',
-        },
-        //...
-    ],
-    pools: [
-        {
-        name: 'Pool Name 1',
-        pair: '...-...',
-        pairLink: '...',
-        logo: 'URL',
-        poolRewards: [
-            'MIA'
+        "links": [
+            {
+                "link": "URL",
+                "title": "..."
+            },
+            //...
         ],
-        apr: ...,
-        totalStaked: ...,
-        
-        },
-        //...
+        "provider": "...",
+        "provider_URL": "URL",
+        "provider_logo": "URL",
+        "pools": [
+            {
+                "name": "...",
+                "pair": "...",
+                "pairLink": "URL",
+                "logo": "",
+                "poolRewards": [
+                    "MIA"
+                ],
+                "totalStaked": "...",
+                "apr": "..."
+            },
+            {
+                "name": "...",
+                "pair": "...",
+                "pairLink": "URL",
+                "logo": "",
+                "poolRewards": [
+                    "MIA"
+                ],
+                "totalStaked": "...",
+                "apr": "..."
+            },
+            ///...
+        ]
     }
-  ]
-}
+```
+
 
 
 ## COINGECKO
