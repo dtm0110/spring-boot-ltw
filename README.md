@@ -65,3 +65,43 @@ Returns data for the MiaSwap farms.
 
 
 ## COINGECKO
+
+## [`/miaswap-cg/pairs`](https://cmc-cg-api.miaswap.io/miaswap-cg/pairs)
+Details on cryptoassets traded on an exchange.
+### Request
+`GET https://cmc-cg-api.miaswap.io/miaswap-cg/pairs`
+### Response
+```json5
+  {
+    "ticker_id": "BTC_ETH", // Identifier of a ticker with delimiter to separate base/target.
+    "base": "BTC",          // Symbol/currency code of a the base cryptoasset.
+    "target": "ETH",        // Symbol/currency code of the target cryptoasset.
+  }
+```
+## [`/miaswap-cg/tickers`](https://cmc-cg-api.miaswap.io/miaswap-cg/tickers)
+Market related statistics for all markets for the last 24 hours.
+### Request
+`GET https://cmc-cg-api.miaswap.io/miaswap-cg/pairs`
+### Response
+```json5
+  {
+    "ticker_id": "BTC_ETH", // Identifier of a ticker with delimiter to separate base/target.
+    "base": "BTC",          // Symbol/currency code of a the base cryptoasset.
+    "target": "ETH",        // Symbol/currency code of the target cryptoasset.
+    "last_price":"50.0",    // Last transacted price of base currency based on given target currency (unit in base or target).
+    "base_volume":"10",     // 24 hour trading volume in base pair volume (unit in base).
+    "target_volume":"500",  // 24 hour trading volume in target pair volume (unit in target).
+  }
+```
+## [`/miaswap-cg/orderbook?ticker_id=BTC_BUSD`](https://cmc-cg-api.miaswap.io/miaswap-cg/pairs)
+Order book depth of any given trading pair
+### Request
+`GET https://cmc-cg-api.miaswap.io//miaswap-cg/orderbook?ticker_id=BTC_ETH`
+### Response
+```json5
+  {
+    "ticker_id": "BTC_ETH", // Identifier of a ticker with delimiter to separate base/target.
+    "bids": "[]",          // An array containing 2 elements. The offer price and quantity for each bid order.
+    "asks": "[]",        // An array containing 2 elements. The ask price and quantity for each ask order
+  }
+```
