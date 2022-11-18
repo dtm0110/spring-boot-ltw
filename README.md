@@ -12,16 +12,16 @@ Returns data for the MiaSwap pairs.
 ### Response 
 ```json5
     {
-        "0x..._0x...": {
-            "base_id": "0x...",
-            "base_name": "...",
-            "base_symbol": "...",
-            "quote_id": "...",
-            "quote_name": "...",
-            "quote_symbol": "...",
-            "last_price": "...",
-            "base_volume": "...",
-            "quote_volume": "..."
+        "0x..._0x...": {                // the asset ids of tokens, joined by an underscore
+            "base_id": "0x...",         // token0 address
+            "base_name": "...",         // token0 name
+            "base_symbol": "...",       // token0 symbol
+            "quote_id": "...",          // token0 address
+            "quote_name": "...",        // token0 name
+            "quote_symbol": "...",      // token0 symbol
+            "last_price": "...",        // price denominated in token1/token0
+            "base_volume": "...",       // volume denominated in token0
+            "quote_volume": "..."       // volume denominated in token1
         },
         //...
     }
@@ -42,31 +42,20 @@ Returns data for the MiaSwap farms.
             },
             //...
         ],
-        "provider": "...",
-        "provider_URL": "URL",
-        "provider_logo": "URL",
-        "pools": [
+        "provider": "...",              //provider name
+        "provider_URL": "URL",          //provider URL
+        "provider_logo": "URL",         //provider logo
+        "pools": [                      //list pool
             {
-                "name": "...",
-                "pair": "...",
-                "pairLink": "URL",
-                "logo": "",
+                "name": "...",          //pair name
+                "pair": "...",          //pair symbol
+                "pairLink": "URL",      //pair link
+                "logo": "",             //pair logo
                 "poolRewards": [
                     "MIA"
                 ],
-                "totalStaked": "...",
-                "apr": "..."
-            },
-            {
-                "name": "...",
-                "pair": "...",
-                "pairLink": "URL",
-                "logo": "",
-                "poolRewards": [
-                    "MIA"
-                ],
-                "totalStaked": "...",
-                "apr": "..."
+                "totalStaked": "...",   //total Liquidity
+                "apr": "..."            //apr farm
             },
             ///...
         ]
