@@ -3,13 +3,14 @@
 
 
 ## COINMARKETCAP
-    -- /mia/get --
+    ## [`/mia/get`]
     Returns data for the MiaSwap pairs.
 
-    ** Request **
+    ### Request 
     Get https://cmc-cg-api.miaswap.io/mia/get
 
-    ** Response **
+    ### Response 
+    ```json5
     {
         "0x..._0x...": {
             "base_id": "0x...",
@@ -25,13 +26,14 @@
         //...
     }
 
-    -- /faming/get --
+    ## [`/faming/get`]
     Returns data for the MiaSwap farms.
 
-    ** Request **
+    ### Request 
     Get https://cmc-cg-api.miaswap.io/farming/get
 
-    ** Response **
+    ### Response 
+    ```json5
     {
     provider: 'MiaSwap',
     provider_logo: 'URL',
