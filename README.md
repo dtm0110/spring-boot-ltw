@@ -3,7 +3,7 @@
 
 
 ## COINMARKETCAP
-## [`/mia/get`]
+## [`/mia/get`] (https://cmc-cg-api.miaswap.io/mia/get)
 Returns data for the MiaSwap pairs.
 
 ### Request 
@@ -26,7 +26,7 @@ Returns data for the MiaSwap pairs.
         //...
     }
 ```
-## [`/faming/get`]
+## [`/faming/get`] (https://cmc-cg-api.miaswap.io/farming/get)
 Returns data for the MiaSwap farms.
 
 ### Request 
